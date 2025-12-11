@@ -7,7 +7,7 @@ scanf("%d %lf %lf",&m,&theta,&d);
 double pi=3.141592653589793;
 rad = theta*(pi/180);
 double xlambda=(d*sin(rad)*1000)/m; // for maxima
-double nlambda=(2*d*sin(rad)*1000)/(2*m+1); // for minima
+double nlambda=(2*d*sin(rad)*1000)/(2*m-1); // for minima
 
 //for maxima
 if (xlambda >=380 && xlambda<=450){
@@ -59,3 +59,4 @@ else{printf("Out of range\n");}
 
 return 0;
 }
+
